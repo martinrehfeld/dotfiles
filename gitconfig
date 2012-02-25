@@ -1,0 +1,37 @@
+[user]
+  name = Martin Rehfeld
+  email = martin.rehfeld@glnetworks.de
+[color]
+  branch = auto
+  status = auto
+[instaweb]
+  local = true
+  httpd = webrick
+  port = 10000
+[git-tmbundle]
+  gitx-path = /usr/local/bin/gitx
+[mirror]
+  summary = true
+[apply]
+  whitespace = nowarn
+[github]
+  user = martinrehfeld
+[rerere]
+  enabled = 1
+[push]
+  default = current
+[core]
+  editor = "mvim -f -c 'au VimLeave * !open -a Terminal'"
+  excludesfile = /Users/martinrehfeld/.gitignore
+[diff]
+  tool = vimdiff
+  guitool = mvim
+[merge]
+  tool = vimdiff
+  guitool = mvim
+[mergetool "mvim"]
+  cmd = mvim -f -d "$LOCAL" "$MERGED" "$REMOTE"
+[difftool "mvim"]
+  cmd = mvim -f -d "$LOCAL" "$REMOTE"
+[git-up "bundler"]
+  check = true
