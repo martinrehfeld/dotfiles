@@ -4,3 +4,6 @@
 --type-set=markdown=.md,.markdown
 --type-set=coffeescript=.coffee
 --type-set=jstemplate=.jst
+--ignore-dir=coverage
+--ignore-dir=output
+--ignore-dir=.eunit
