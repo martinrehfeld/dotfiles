@@ -1,0 +1,2 @@
+HomeDir = string:strip(os:cmd("echo $HOME"), right, $\n).
+code:load_abs(HomeDir ++ "/.erlang-ebin/user_default").
